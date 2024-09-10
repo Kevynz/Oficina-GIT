@@ -26,8 +26,66 @@
       <li class="nav-item"></li>
         <a class="nav-link" href="variaveis.html">Variáveis</a>
       </li>
-    </ul>
-
+    </ul>  
   </header>
+  <div class="container">
+  <h3>Exemplo 1</h3>
+  <p><code>
+    const carro = {<br>
+      marca: 'VW',<br>
+      modelo: 'Fusca TSi',<br>
+      Ano: '2019',<br>
+      cor: 'Azul',<br>
+      acelerar : function() {<br>
+          console.log('O carro está acelerando!');<br>
+      },<br>
+      parar: function(){<br>
+          console.log('o carro parou.');<br>
+      }<br>
+  };<br>
+  
+  console.log(carro.marca); // Fusca<br>
+  carro.acelerar();// o carro está acelerando!<br>
+  carro.parar();// o carro parou
+  </code></p>
+
+  <h3>Exemplo 2</h3>
+  <p><code>
+    function Pessoa(nome, idade) {<br>
+      this.nome = nome;<br>
+      this.idade = idade;<br>
+      this.saudacao = function() {<br>
+          return `olá, meu nome ${this.nome} e tenho ${this.idade} anos.`;<br>
+      };<br>
+  }<br>
+  
+  const pessoa1 = new Pessoa('Ana', 25);<br>
+  const pessoa2 = new Pessoa('Carlos', 40);<br>
+  
+  console.log(pessoa1.saudacao());<br>
+  console.log(pessoa2.saudacao()); 
+  </code></p>
+
+  <h3>Exemplo 3</h3>
+  <p><code>
+    class Animal {<br>
+      constructor(nome, especie) {<br>
+          this.nome = nome;<br>
+          this.especie = especie;<br>
+      };<br>
+  
+      fazerSom() {<br>
+          console.log(`${this.nome} está fazendo um som.`);<br>
+      };<br>
+  }<br>
+  
+  const cachorro = new Animal('Rex', 'Cachorro');<br>
+  const gato = new Animal('Miau', 'Gato');<br>
+  
+  cachorro.fazerSom();<br>
+   gato.fazerSom();
+  </code></p>
+  </div>
 </body>
+<script src="js/objeto.js"></script>
 </html>
