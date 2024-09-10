@@ -23,8 +23,28 @@
       <li class="nav-item">
         <a class="nav-link active" href="repeticao.html">Repetição</a>
       </li>
+      <li class="nav-item"></li>
+        <a class="nav-link" href="variaveis.html">Variáveis</a>
+      </li>
     </ul>
 
   </header>
+  <div class="container">
+  <h3>Exemplo 1</h3>
+  <p><code>const produtos = [</code></p>
+  <p><code> { nome: "Sabonete", preco: 3.50 },</code></p>
+  <p><code>{ nome: "Shampoo", preco: 15.00 }</code></p>
+  <p><code>{ nome: "Condicionador", preco: 18.00 },</code></p>
+  <p><code>{ nome: "Pasta de dente", preco: 5.75 }</code></p>
+  <p><code>];</code></p>
+  <p><code>let total = 0;</code></p>
+  <p><code>console.log("Produtos e seus preços:");  </code></p>
+  <p><code>for (let i = 0; i < produtos.length; i++) {</code></p>
+  <p><code>console.log(${produtos[i].nome}: R$ ${produtos[i].preco});</code></p>
+  <p><code>total += produtos[i].preco;</code></p>
+  <p><code>}</code></p>
+  <p><code>console.log(\nPreço total: R$ ${total.toFixed(2)});</code></p>
+</div>
+<script src="js/deverjs.js"></script>
 </body>
 </html>
