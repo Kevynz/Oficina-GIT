@@ -5,8 +5,8 @@ Membros:
 -Saimon Maculai Vilas Boas
 -Pedro Henrique Santos da Silva
 -John Elton Santos Silva
--Bruno Felipe
--Pedro Peres
+-Bruno Felipe Correia da Costa Silva
+-Pedro Henrique Barbosa Silva Peres
 
 Turma: ADS
 
