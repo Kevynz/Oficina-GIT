@@ -31,20 +31,46 @@
   </header>
   <div class="container">
   <h3>Exemplo 1</h3>
-  <p><code>const produtos = [</code></p>
-  <p><code> { nome: "Sabonete", preco: 3.50 },</code></p>
-  <p><code>{ nome: "Shampoo", preco: 15.00 }</code></p>
-  <p><code>{ nome: "Condicionador", preco: 18.00 },</code></p>
-  <p><code>{ nome: "Pasta de dente", preco: 5.75 }</code></p>
-  <p><code>];</code></p>
-  <p><code>let total = 0;</code></p>
-  <p><code>console.log("Produtos e seus preços:");  </code></p>
-  <p><code>for (let i = 0; i < produtos.length; i++) {</code></p>
-  <p><code>console.log(${produtos[i].nome}: R$ ${produtos[i].preco});</code></p>
-  <p><code>total += produtos[i].preco;</code></p>
-  <p><code>}</code></p>
-  <p><code>console.log(\nPreço total: R$ ${total.toFixed(2)});</code></p>
+  <p><code>const produtos = [<br>
+   { nome: "Sabonete", preco: 3.50 },<br>
+  { nome: "Shampoo", preco: 15.00 }<br>
+  { nome: "Condicionador", preco: 18.00 },<br>
+  { nome: "Pasta de dente", preco: 5.75 }<br>
+  ];<br>
+  let total = 0;<br>
+  console.log("Produtos e seus preços:");<br>
+  for (let i = 0; i < produtos.length; i++) {<br>
+  console.log(${produtos[i].nome}: R$ ${produtos[i].preco});<br>
+  total += produtos[i].preco;<br>
+  }<br>
+  console.log(\nPreço total: R$ ${total.toFixed(2)});</code></p>
+
+  <h3>Exemplo 2</h3>
+  <p><code>const tarefas = [<br>
+    { nome: "Lavar a louça", completa: false },<br>
+    { nome: "Arrumar a cama", completa: false },<br>
+    { nome: "Fazer exercícios", completa: false },<br>
+    { nome: "Estudar JavaScript", completa: false }<br>
+];<br>
+
+let i = 0;<br>
+
+console.log("Lista de Tarefas:");<br>
+while (i < tarefas.length) {<br>
+    console.log(${tarefas[i].nome} - Completa: ${tarefas[i].completa ? "Sim" : "Não"});<br>
+    // Marcar a tarefa como completa<br>
+    tarefas[i].completa = true;<br>
+    i++;<br>
+}<br>
+
+console.log("\nTarefas após serem completadas:");<br>
+i = 0;<br>
+while (i < tarefas.length) {<br>
+    console.log(${tarefas[i].nome} - Completa: ${tarefas[i].completa ? "Sim" : "Não"});<br>
+    i++;
+}</code></p>
 </div>
 <script src="js/ex1repeticao.js"></script>
+<script src="js/ex2repticao.js"></script>
 </body>
 </html>
